@@ -182,7 +182,6 @@ body.loaded {
     display: none;
 }
 
-/* Scroll Buttons */
 .scroll-btn {
     position: absolute;
     top: 50%;
@@ -216,7 +215,6 @@ body.loaded {
     right: 10px;
 }
 
-/* Hover zones for buttons */
 .scroll-zone {
     position: absolute;
     top: 0;
@@ -301,7 +299,37 @@ body.loaded {
     color: white;
     background: linear-gradient(135deg, #b310b2 0%, #9b0d9a 100%);
 }
-/* About Section End */
+
+/* Responsivity for tablet/mobile */
+@media (max-width: 991px) {
+    .portfolio-wrapper {
+        position: static;
+    }
+    
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: normal;
+        overflow: visible;
+        padding: 20px;
+        gap: 30px;
+    }
+    
+    .portfolio-card {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+        white-space: normal;
+    }
+    
+    .scroll-btn,
+    .scroll-zone {
+        display: none;
+    }
+}
+/* Portfolio Section End */
 
 /* Footer Start */
 .footer {

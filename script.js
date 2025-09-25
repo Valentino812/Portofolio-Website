@@ -45,31 +45,4 @@ scrollRightBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-// Touch support for mobile devices
-let startX = 0;
-let scrollLeft = 0;
-let isDragging = false;
-
-portfolioContainer.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].pageX - portfolioContainer.offsetLeft;
-    scrollLeft = portfolioContainer.scrollLeft;
-    isDragging = true;
-});
-
-portfolioContainer.addEventListener('touchmove', (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    const x = e.touches[0].pageX - portfolioContainer.offsetLeft;
-    const walk = (x - startX) * 2; // Multiply for faster scrolling
-    portfolioContainer.scrollLeft = scrollLeft - walk;
-});
-
-portfolioContainer.addEventListener('touchend', () => {
-    isDragging = false;
-});
-
-// Set initial cursor
-portfolioContainer.style.cursor = 'grab';
-
 // 3.Portfolio scrolling end
