@@ -317,6 +317,7 @@ body.loaded {
     }
     
     .portfolio-card {
+        padding: 0 0 0 0;
         display: block;
         width: 100%;
         max-width: 400px;
@@ -325,6 +326,18 @@ body.loaded {
     }
     
     .scroll-btn,
+    .scroll-zone {
+        display: none;
+    }
+}
+
+/* Permanently visible scroll buttons for touchscreen */
+@media (pointer: coarse) {
+    .scroll-btn {
+        opacity: 1;
+        visibility: visible;
+    }
+    
     .scroll-zone {
         display: none;
     }
