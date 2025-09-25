@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mika Valentino</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!-- Web Icon  -->
+    <link rel="icon" href="assets/web-Icon.png" type="image/x-icon" />
+    <!-- Bootstrap 5.3.8 CSS -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container-fluid">
+    <!-- Left -->
+    <a class="navbar-brand fw-bold navbar-title" href="#">Mika Valentino</a>
+    <!-- Middle -->
+    <div class="mx-auto">
+        <span class="navbar-text fw-bold navbar-logo">|| MV ||</span>
+    </div>
+    <!-- Right -->
+    <div>
+        <a href="https://www.linkedin.com/in/mika-valentino-296b96370/" target="_blank" class="social-icon">
+        <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/Valentino812" target="_blank" class="social-icon">
+        <i class="bi bi-github"></i>
+        </a>
+    </div>
+    </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Background Hero Section Start -->
+    <section class="bg-hero">
+    </section>
+    <!-- Background Hero Section End -->
+
+    <!-- About Section Start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title about-title">About</h2>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <!-- Profile Picture - 5/12 columns -->
+                <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+                    <img src="assets/profile.jpg" 
+                        alt="Mika V Profile" class="profile-img">
+                </div>
+                <!-- About Text and Skills - 7/12 columns -->
+                <div class="col-lg-7">
+                    <div class="about-text">
+                        <h3>Hello, I'm Mika Valentino</h3>
+                        <p>I am a third-year Informatics Engineering student from Tarumanagara University, passionate in both hardware and software. </p>
+                        
+                        <p>I am focusing in building foundation skills in full-stack development and software development, with a focus on modern technologies including React.js, Next.js, Laravel, Flutter, Python, PostgreSQL, and MongoDB.</p>
+                        
+                        <p>I envision creating solutions that not only address real-world problems but also improve accessibility, foster innovation, and inspire collaboration across different fields. Ultimately, my goal is to leave a lasting impact through technology that uplifts people’s lives and supports sustainable progress.</p>
+                        
+                        <div class="skills-container">
+                            <h4 class="skills-title">Technical Skills</h4>
+                            <div class="skills-grid">
+                                <div class="skill-item">JavaScript</div>
+                                <div class="skill-item">React.js</div>
+                                <div class="skill-item">Node.js</div>
+                                <div class="skill-item">Laravel</div>
+                                <div class="skill-item">Flutter</div>
+                                <div class="skill-item">Python</div>
+                                <div class="skill-item">MongoDB</div>
+                                <div class="skill-item">Express.js</div>
+                                <div class="skill-item">HTML/CSS</div>
+                                <div class="skill-item">Git</div>
+                                <div class="skill-item">Linux</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title portfolio-title">Portfolio</h2>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-wrapper">
+            <!-- Hover zones for scroll buttons -->
+            <div class="scroll-zone scroll-zone-left"></div>
+            <div class="scroll-zone scroll-zone-right"></div>
+            
+            <!-- Scroll buttons -->
+            <button class="scroll-btn scroll-btn-left" id="scrollLeft">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="scroll-btn scroll-btn-right" id="scrollRight">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+            
+            <div class="portfolio-container" id="portfolioContainer">
+                <!-- Portfolio Card 1 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/autolearn.png" class="card-img-top" alt="E-commerce Platform">
+                        <div class="card-body">
+                            <h5 class="card-title">Autolearn: Education Chatbot</h5>
+                            <p class="card-text">Autolearn is an AI-powered learning assistant platform that allows users to learn by uploading study materials, and receiving intelligent responses based on document content. The platform is built with React for the frontend, Node.js for the backend, and Python.</p>
+                            <a href="https://github.com/yosiasp/AutoLearn" class="btn btn-portfolio" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 2 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/social_media.png" class="card-img-top" alt="Social media app">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile Photo Social Media App</h5>
+                            <p class="card-text">A mobile social media application dedicated as a platform to share photos with friends and the world. Made for Android using Flutter as the framework and Fireship as the back-end.Include dedicated social media features like posting images and for your page.</p>
+                            <a href="https://github.com/yosiasp/mobile_prog_kel6" class="btn btn-portfolio" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 3 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/sushoes.jpg" class="card-img-top" alt="Shoe Store">
+                        <div class="card-body">
+                            <h5 class="card-title">SuShoes Shoe Store Website</h5>
+                            <p class="card-text">A lifestyle-themed website for a shoe store. The website features a brief store history, product descriptions highlighting unique quality and craftsmanship, a gallery showcasing each item with images and details and purchasing features. Built with Laravel. </p>
+                            <a href="https://github.com/yosiasp/projekuas-kel6-frontend" class="btn btn-portfolio" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 4 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/internet_banking.jpg" class="card-img-top" alt="Internet Banking">
+                        <div class="card-body">
+                            <h5 class="card-title">Internet Banking Website</h5>
+                            <p class="card-text">Full-stack internet banking platform that provides essential features such as transferring and receiving funds, viewing transaction history, and ensuring secure account access. Security is prioritized through measures like automatic account blocking after multiple failed login attempts, protecting users from unauthorized access. The system focuses on simplicity, reliability, and user-friendly design.</p>
+                            <a href="https://github.com/yosiasp/UAS-PROJEK-KELOMPOK-3-INTERNET-BANKING" class="btn btn-portfolio" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 5 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/bmfti.jpg" class="card-img-top" alt="BMFTI">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Executive Board Website</h5>
+                            <p class="card-text">The BMFTI (Badan Mahasiswa Fakultas Teknologi Informasi) website is a faculty student executive board website that aims to develop the abilities of students studying at the faculty of information technology.</p>
+                            <a href="https://github.com/Valentino812/Website-BMFTI" class="btn btn-portfolio" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 6 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/bootstrap.png" class="card-img-top" alt="Bootstrap Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap Website Development</h5>
+                            <p class="card-text">Rebuilding a website using Bootstrap 5 while also adding responsive design, minimalist cyan color palette, and typography. Includes hover effects, shadows, a navbar with social media icons, and a redesigned footer. New sections such as Our Brief History and Our Stories with cards and modals were added, along with hero carousels on Home and About. Functional forms for Subscribe and Contact trigger modals, and all pages use a smooth fade-in transition.</p>
+                            <a href="https://github.com/Valentino812/Pengembangan-Website-Bootstrap" class="btn btn-portfolio" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 7 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/portfolio-website.png" class="card-img-top" alt="Porfolio Website">
+                        <div class="card-body">
+                            <h5 class="card-title">My Portfolio Website</h5>
+                            <p class="card-text">Designed using HTML, CSS, JavaScript and Bootstrap 5.3.8 framework. You are in it now!</p>
+                            <a href="https://github.com/Valentino812/Pengembangan-Website-Bootstrap" class="btn btn-portfolio" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+    
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="footer-title">
+            <h3>Mika Valentino</h3>
+        </div>
+        <div class="social">
+            <!-- LinkedIn link -->
+            <a href="https://www.linkedin.com/in/mika-valentino-296b96370/" target="_blank">
+                <div class="icon-container">
+                    <i class="bi bi-linkedin"></i>
+                </div>
+            </a>
+            <!-- Github -->
+            <a href="https://github.com/Valentino812" target="_blank">
+                <div class="icon-container">
+                    <i class="bi bi-github"></i>
+                </div>
+            </a>
+        </div>
+        <div class="copyright">
+            <a>&copy; Mika Valentino 2025</a>
+        </div>
+    </div>
+    <!-- Footer End -->
+ 
+    <!-- Bootstrap 5.3.8 JS -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
