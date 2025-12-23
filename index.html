@@ -100,6 +100,10 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="section-title portfolio-title">Portfolio</h2>
+                    <div class="portfolio-filter text-center mb-4">
+                        <button class="filter-btn active" onclick="filterPortfolio('fullstack')">Full-stack</button>
+                        <button class="filter-btn" onclick="filterPortfolio('datascience')">Data Science</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,7 +120,8 @@
                 <i class="bi bi-chevron-right"></i>
             </button>
             
-            <div class="portfolio-container" id="portfolioContainer">
+            <!-- Full-stack Projects -->
+            <div class="portfolio-container" id="fullstack-container">
                 <!-- Portfolio Card 1 -->
                 <div class="portfolio-card">
                     <div class="card">
@@ -213,6 +218,39 @@
                             <div class="d-grid gap-2 mt-3">
                                     <a href="https://github.com/Valentino812/Portofolio-Website" class="btn btn-portfolio" target="_blank">View Project</a>
                                     <a href="https://portofolio-website-sigma-eight.vercel.app/" class="btn btn-portfolio" target="_blank">View Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Science Projects -->
+            <div class="portfolio-container" id="datascience-container" style="display: none;" >
+                <!-- Portfolio Card 1 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/clustering_countries.jpg" class="card-img-top" alt="Clustering Countries">
+                        <div class="card-body">
+                            <h5 class="card-title">Clustering Countries Based on Global Development Indicators Using PCA and K-Means Clustering for the Years 2000–2020</h5>
+                            <p class="card-text">Global Development Clustering is a data mining analysis that groups countries by processing development indicators from 2000–2020, and identifying patterns through dimensionality reduction. The analysis is performed using MATLAB for extensive data pre-processing, Principal Component Analysis (PCA), and K-Means clustering.</p>
+                            <div class="d-grid gap-2 mt-3">
+                                <a href="https://drive.google.com/file/d/19-SEcLm4OEgU_ykNvpEzSb-JXEuzPF75/view" class="btn btn-portfolio" target="_blank">View Article</a>
+                                <a href="https://drive.google.com/file/d/1KCqr_IQW1Vr2GGiobbE9eJv44wbLZABd/view" class="btn btn-portfolio" target="_blank">View Code and Tables</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Card 2 -->
+                <div class="portfolio-card">
+                    <div class="card">
+                        <img src="assets/portfolios/corelation_analysis.png" class="card-img-top" alt="Corellation Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title">Correlation Analysis of the Relationship Between Education Level and Narcotics Crime in Sumatra Island</h5>
+                            <p class="card-text">Sumatra Narcotics Analysis is a statistical study investigating the correlation between education levels and drug crime rates by applying Pearson's Chi-Square test to real-world datasets. The project is developed using Python on Google Colab, utilizing Pandas and SciPy for data processing and hypothesis testing.</p>
+                            <div class="d-grid gap-2 mt-3">
+                                <a href="https://drive.google.com/file/d/1bTZvwAf6B78Lb-fhs9RYXFynreNLzfYp/view" class="btn btn-portfolio" target="_blank">View Journal</a>
+                                <a href="https://drive.google.com/file/d/1oMwGHrrtW2S5mSW__CEJXEiXm6YegF1w/view" class="btn btn-portfolio" target="_blank">View Code</a>
                             </div>
                         </div>
                     </div>

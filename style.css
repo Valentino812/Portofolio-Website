@@ -164,6 +164,43 @@ body.loaded {
     color: #13151a;
 }
 
+.portfolio-filter {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start; /* Tombol rata kiri (sesuai request dekat title) */
+    gap: 15px; /* Jarak antar tombol */
+    padding-left: 0; 
+}
+
+/* Jika ingin tombol rata tengah, ubah justify-content di atas jadi 'center' */
+
+/* Styling Dasar Tombol Filter */
+.filter-btn {
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #9b0d9a; /* Border warna ungu */
+    background: transparent;
+    color: #9b0d9a; /* Teks ungu */
+    transition: all 0.3s ease;
+}
+
+/* Styling saat Tombol di-Hover */
+.filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(155, 13, 154, 0.2);
+}
+
+/* Styling Tombol AKTIF (Terpilih) - Menggunakan Gradient kamu */
+.filter-btn.active {
+    background: linear-gradient(135deg, #9b0d9a 0%, #7a0a79 100%);
+    color: white;
+    border: 2px solid transparent; /* Hilangkan border saat aktif */
+    box-shadow: 0 4px 15px rgba(155, 13, 154, 0.3);
+}
+
 .portfolio-wrapper {
     position: relative;
 }

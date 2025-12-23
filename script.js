@@ -25,24 +25,69 @@ window.addEventListener('scroll', () => {
 });
 // 2.Navbar hide/show on scroll end
 
+// 3.Filter portfolio by choice category start
+function filterPortfolio(category) {
+    // Container elements
+    const fullstackContainer = document.getElementById('fullstack-container');
+    const datascienceContainer = document.getElementById('datascience-container');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Active category 
+    if (category === 'fullstack') {
+        fullstackContainer.style.display = 'block'; 
+        datascienceContainer.style.display = 'none'; 
+    } else if (category === 'datascience') {
+        fullstackContainer.style.display = 'none'; 
+        datascienceContainer.style.display = 'block'; 
+    }
+
+    // Updating button 
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+        
+        if (btn.getAttribute('onclick').includes(category)) {
+            btn.classList.add('active');
+        }
+    });
+}
+// 4.Filter portfolio by choice category end
+
 // 3.Portfolio scrolling start 
 // Portfolio scrolling with buttons and touch support
-const portfolioContainer = document.getElementById('portfolioContainer');
 const scrollLeftBtn = document.getElementById('scrollLeft');
 const scrollRightBtn = document.getElementById('scrollRight');
 
+// Portfolio containers
+const containerFullstack = document.getElementById('fullstack-container');
+const containerDataScience = document.getElementById('datascience-container');
+
+// Checking current active container
+function getActiveContainer() {
+    if (containerDataScience.style.display === 'none' || getComputedStyle(containerDataScience).display === 'none') {
+        return containerFullstack;
+    } else {
+        return containerDataScience;
+    }
+}
+
 // Button click handlers
 scrollLeftBtn.addEventListener('click', () => {
-    portfolioContainer.scrollBy({
-        left: -350, 
-        behavior: 'smooth'
-    });
+    const activeContainer = getActiveContainer(); 
+    if (activeContainer) {
+        activeContainer.scrollBy({
+            left: -350, 
+            behavior: 'smooth'
+        });
+    }
 });
 
 scrollRightBtn.addEventListener('click', () => {
-    portfolioContainer.scrollBy({
-        left: 350, 
-        behavior: 'smooth'
-    });
+    const activeContainer = getActiveContainer(); 
+    if (activeContainer) {
+        activeContainer.scrollBy({
+            left: 350, 
+            behavior: 'smooth'
+        });
+    }
 });
 // 3.Portfolio scrolling end
